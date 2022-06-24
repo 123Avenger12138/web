@@ -1,0 +1,141 @@
+/* 设置全局属性 */
+body {
+  /* 设置背景图片大小为覆盖全屏 */
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(./images/background3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* 设置字体大小 */
+  font-size: small;
+  /* 设置外边距 */
+  margin: 0px;
+}
+.first-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/background4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.next-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 设置页眉区属性 */
+#header {
+  position: fixed;
+  left: 0.5vw;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98vw;
+  height: 15vh;
+  line-height: 15vh;
+  box-sizing: border-box;
+  padding-left: 3vw;
+  background-color: rgba(255, 255, 255, 0.51);
+  border-radius: 1vw;
+  font-weight: normal;
+  /* 设置字体类型 */
+  font-family: "等线";
+  color: rgb(129, 129, 129);
+  /* 设置页眉区高度 */
+  font-size: 3vw;
+}
+#header p{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.Topic{
+  width: 98vw;
+  height: 50vh;
+  text-align: center;
+  line-height: 50vh;
+  font-weight: normal;
+  /* 设置字体类型 */
+  font-family: "等线";
+  color: white;
+  /* 设置页眉区高度 */
+  font-size: 5vw;
+}
+/* 设置inner类属性 */
+.inner {
+  /* 设置宽度 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  height: 6vh;
+  margin: auto;
+}
+.inner a{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  font-weight: normal;
+  /* 设置字体类型 */
+  font-family: "等线";
+  color: rgb(129, 129, 129);
+  /* 设置页眉区高度 */
+  font-size: 1.5vw;
+  line-height: 6vh;
+  text-align: center;
+  width: 20vw;
+  border-radius: 1vw;
+  transition: all 0.5s;
+}
+.inner a:hover{
+  color: black;
+  background-color: white;
+  transition: all 0.5s;
+}
+/* 第二页内容 */
+.next-page a{
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.51);
+  height: 65vh;
+  width: 20vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: normal;
+  font-family: "等线";
+  color: rgb(60, 60, 60);
+  font-size: 2vw;
+  transition: all 0.5s;
+}
+.next-page a div{
+  width: 14vw;
+  height: 14vw;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vw;
+}
+.next-page a:hover{
+  transform: scale(1.05);
+  transition: all 0.5s;
+}

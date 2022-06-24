@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱好</title>
+    <!-- 引用游戏.css外部样式表 -->
+    <link rel="stylesheet" href="./HOBBY.css">
+</head>
+
+<body>
+    <div id="header">
+        <p>肖新航's Page</p>
+        <p style="font-size: 5vw;font-weight: lighter;">|</p>
+        <p style="font-size: 2vw;line-height: 20vh;">MY PROFILE</p>
+        <div class="inner">
+            <a href="./index.html">首页</a>
+            <a href="./ABOUTME.html">关于我</a>
+            <a href="./album.html">相册</a>
+            <a href="./HOBBY.html">爱好</a>
+        </div>
+    </div>
+    <!-- 第一页 -->
+    <div class="first-page">
+        <div class="container">
+            <div>我喜欢的歌手</div>
+            <div class="album">
+                <div style="background-image: url(./images/a1.jpg);"></div>
+                <div style="background-image: url(./images/a2.jpg);"></div>
+                <div style="background-image: url(./images/a3.jpg);"></div>
+                <div style="background-image: url(./images/a4.jpg);"></div>
+            </div>
+            <div class="name">
+                <div>周杰伦</div>
+                <div>王以太</div>
+            </div>
+        </div>
+      </div>
+      <!-- 第二页 -->
+      <div class="next-page">
+          <!-- 表单 -->
+        <form action="https://y.qq.com/">
+            <div class="tableRow">
+                <p>
+                    年龄：
+                </p>
+                <p>
+                    <input type="text" name="age" value="" placeholder="请输入年龄" required>
+                </p>
+            </div>
+            <div class="tableRow">
+                <p>
+                    最喜欢的音乐类型：
+                </p>
+                <p>
+                    <!-- 创建下拉菜单框 -->
+                    <select name="MusicType" >
+                        <option value="">说唱</option>
+                        <option value="">国风</option>
+                        <option value="">流行</option>
+                        <option value="">摇滚</option>
+                        <option value="">轻音乐</option>
+                    </select>
+                </p>
+            </div>
+            <div class="tableRow">
+                <p>
+                    最喜欢的音乐：
+                </p>
+                <p>
+                    <input type="text" name="game" value="" required>
+                </p>
+            </div>
+            <div class="tableRow">
+                <p></p>
+                <!-- 提交按钮,将表单发送至服务器端 -->
+                <p> <input type="submit" value="提交"> </p>
+            </div>
+        </form>
+      </div>
+</body>
+
+</html>
